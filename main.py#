@@ -1,0 +1,12 @@
+def get_book_text(path):
+    with open (path) as f:
+        text = f.read()
+    return text
+
+def main():
+    text = get_book_text("/home/ohlordy/code_courses/bookbot/books/frankenstein.txt")
+    number = len(text.split())
+    print(f"{number} words found in the document")
+
+main()
+
